@@ -10,8 +10,10 @@ class Pokemon(models.Model):
 
 
 class PokemonEntity(models.Model):
+    name_pokemon = models.ForeignKey(Pokemon, on_delete=models.CASCADE)
     lat = models.FloatField()
     lon = models.FloatField()
+
 
 
 
